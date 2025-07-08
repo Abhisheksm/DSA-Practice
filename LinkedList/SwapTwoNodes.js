@@ -27,7 +27,28 @@ function printLL(head)
    }
 }
 
-function swapPairs(head){
+function swapPairs(head)
+{
+    if(!head || !head.next) return head
+    let newNode = new Node(0)
+    newNode.next = head
+    let l = head
+    let r = head.next
+    let prev = newNode
+    while(l && l.next)
+    {
+      prev.next = r
+      l.next = r.next
+      r.next = l
+      prev = l
+      l = prev.next
+      r = l && l.next
+    }
+
+    return newNode.next
+}
+
+function swapPairsWithRecursion(head){
     if(!head || !head.next) return head
     let l = head
     let r = l.next
