@@ -1,6 +1,15 @@
 //496. Next Greater Element I
 
 //using Stack
+/*
+1. Start from last element of the nums2 array. and push last element into the stack.
+2. Assign -1 to last element as it will never have any grater value
+3. Start loop from second last elemment.
+4. If element is less then stacks top value then assign, stacks top value to the element and push element in stack.
+5. If element is less then stacks top value, pop that element untill it finds value greater then that element.
+6. If it does not find any value greater then it, then assign it -1.
+7. Push that element into the stack.
+*/
 var nextGreaterElement = function (nums1, nums2) {
     let map = {}
     let stack = []
