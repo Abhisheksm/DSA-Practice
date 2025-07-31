@@ -1,0 +1,20 @@
+1. Middle of liked list
+  - Use two pointers
+
+2. Reverse linked list
+  - Use two extra pointers.(Excluding curr)
+  - One which popints to null and one temp pointer which points to head
+
+3. Check Cyclic or not
+  - Use hashmap / set
+   - Use two pointers
+
+4. Check Pallindrome
+  - find Mid point
+  - Reverse the linked list from Mid
+  - Check values
+
+5. remove/Add Node 
+ - Add sentinel Node
+
+6.
